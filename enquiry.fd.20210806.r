@@ -12,3 +12,9 @@ length(dlt) # n=34
 
 summary(ctl)
 summary(dlt)
+
+# Figure 1c
+#pdf("~/Downloads/figure_1c.pdf")
+barplot(100*fd.ctl/length(ctl), col="#00FF004C", ylim=c(0,30))
+barplot(100*fd.dlt/length(dlt), col="#FF00FF4C", add = TRUE)
+#dev.off()
